@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/doc-pocket",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

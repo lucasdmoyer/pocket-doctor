@@ -1,0 +1,17 @@
+<form [formGroup]="diagnoseForm" (ngSubmit)="onSubmit(diagnoseForm.value)">
+
+    <div>
+      <label for="query">
+        What seems to be the problem?
+      </label>
+      <input id="query" type="text" formControlName="query">
+    </div> 
+    <button class="button" type="submit">Ask!</button>
+  
+  </form>
+<div *ngFor="let item of response; let i=index">
+    <div *ngIf="i<2">
+        <p>{{item[1]}}</p>
+    </div>
+    
+</div>
